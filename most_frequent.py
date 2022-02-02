@@ -1,12 +1,11 @@
-from collections import Counter
-
-def most_frequent(test_str):
-    res = Counter(test_str)
-    return res
+string= input("enter a string")
   
-test_str = input("Enter a string :=")
- 
-
+all_freq = {}
   
-print (str(most_frequent(test_str)))
-
+for i in string:
+    if i in all_freq:
+        all_freq[i] += 1
+    else:
+        all_freq[i] = 1
+  
+print ("Count of all characters in, string, is :\n "+  str(all_freq))
