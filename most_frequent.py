@@ -1,11 +1,15 @@
-string= input("enter a string")
+
+string= input("Enter a string  :=  ")
   
 all_freq = {}
-  
-for i in string:
-    if i in all_freq:
-        all_freq[i] += 1
-    else:
-        all_freq[i] = 1
-  
+def most_frequent():
+    for i in string:
+        if i in all_freq:
+            all_freq[i]+= 1
+            
+        else:
+            all_freq[i] = 1
+   
+most_frequent()  
 print ("Count of all characters in, string, is :\n "+  str(all_freq))
+
